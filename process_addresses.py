@@ -97,7 +97,7 @@ def newroot():
     root = ET.Element("osm")
     root.attrib['version'] = '0.6'
     root.attrib['upload'] = 'true'
-    root.attrib['generator'] = 'erjiang/kokomo-addresses'
+    root.attrib['generator'] = 'doublemap/nola-addresses'
     return root
 
 
