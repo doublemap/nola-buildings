@@ -111,7 +111,7 @@ def newnode(root, lat, lon, tags={}):
     root.append(n)
 
     for k, v in tags.iteritems():
-        n.append(ET.Element("tag", attrib={
+        n.append(ET.Element("tag", {
             "k": k,
             "v": v
             }))
