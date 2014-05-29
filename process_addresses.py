@@ -37,7 +37,7 @@ def main(infile):
         address_la_node = node.find("tag[@k='ADDRESS_LA']")
 
         house_numb_text = house_numb_node.attrib['v']
-        if dir_node:
+        if dir_node is not None:
             dir_text = dir_node.attrib['v']
         else:
             dir_text = None
@@ -50,7 +50,7 @@ def main(infile):
             type_text = None
 
         status_node = node.find("tag[@k='STATUS']")
-        if status_node and status_node.attrib['v'] == "RETIRED":
+        if status_node is not None and status_node.attrib['v'] == "RETIRED":
             log("Skipping retired addr: " + address_la_text)
             count_skipped += 1
             continue
@@ -74,7 +74,7 @@ def main(infile):
             "addr:housenumber": house_numb_text,
             "addr:street": street
             })
-        log('%s\t\t%s' % (house_numb_text, street))
+        #log('%s\t\t%s' % (house_numb_text, street))
 
     log("----")
     log("%d nodes skipped" % count_skipped)
