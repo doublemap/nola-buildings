@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 import re
-import xml.etree.ElementTree as ET
+import xml.etree.cElementTree as ET
 import sys
 
 import expansions
