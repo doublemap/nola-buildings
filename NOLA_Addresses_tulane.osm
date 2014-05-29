@@ -30269,6 +30269,7 @@
     <tag k='STATUS' v='ACTIVE' />
     <tag k='STREET' v='MAGNOLIA' />
     <tag k='STREETID' v='002275290' />
+    <tag k='TYPE' v='ST' />
     <tag k='X' v='3665692.17631' />
     <tag k='Y' v='525393.77125' />
   </node>
@@ -105996,6 +105997,7 @@
     <tag k='STATUS' v='ACTIVE' />
     <tag k='STREET' v='BROADWAY' />
     <tag k='STREETID' v='001283290' />
+    <tag k='TYPE' v='ST' />
     <tag k='X' v='3663780.6622' />
     <tag k='Y' v='526004.855283' />
   </node>
